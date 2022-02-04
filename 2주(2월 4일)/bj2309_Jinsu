@@ -11,7 +11,7 @@ public class homunculus {
 		Scanner scan=new Scanner(System.in);
 		
 		int[] hm=new int[9];
-		System.out.println("³­ÀïÀÌÀÇ Å°¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+		System.out.println("ë‚œìŸì´ì˜ í‚¤ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 		for(int i=0;i<9;i++) {
 			hm[i]=scan.nextInt();
 		}
