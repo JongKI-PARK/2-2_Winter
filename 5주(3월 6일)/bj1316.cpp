@@ -2,7 +2,6 @@
 //2022.3.6 PARK JONGKI
 
 #include <stdio.h>
-#include <string.h>
 
 #define MAX_SIZE 100
 
