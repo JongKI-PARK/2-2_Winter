@@ -6,7 +6,7 @@ int main() {
 	int num, s;
 	int n = 0;
 
-	printf("ÀÔ·ÂÇÒ ¼ıÀÚÀÇ °³¼ö: ");
+	printf("ì…ë ¥í•  ìˆ«ìì˜ ê°œìˆ˜: ");
 	scanf_s("%d", &s);
 	int arr1[5];
 
@@ -21,7 +21,7 @@ int main() {
 	}*/
 
 	printf("\n");
-	//»ê¼úÆò±Õ
+	//ì‚°ìˆ í‰ê· 
 	double average;
 	
 	for	(int i = 0; i < sizeof(arr1) / 4; i++) {
@@ -31,10 +31,10 @@ int main() {
 	average = n / s;
 	if (average > -1 && average < 0)
 		average = 0;
-	printf("Æò±Õ: %.0f\n", round(average));
+	printf("í‰ê· : %.0f\n", round(average));
 
 
-	//Áß¾Ó°ª
+	//ì¤‘ì•™ê°’
 	int median;
 
 	for (int i = 0; i < (sizeof(arr1) / 4) - 1; i++) {
@@ -53,10 +53,10 @@ int main() {
 		printf("%d\n", arr1[i]);
 
 	median = arr1[(s - 1) / 2];
-	printf("Áß¾Ó°ª: %d\n", median);
+	printf("ì¤‘ì•™ê°’: %d\n", median);
 
 	
-	//ÃÖºó°ª
+	//ìµœë¹ˆê°’
 
 	int mode, freq, count = 1;  
 	
@@ -75,13 +75,13 @@ int main() {
 		}
 	
 	}
-	printf("ÃÖºó°ª: %d, È½¼ö: %d\n", mode, count);
+	printf("ìµœë¹ˆê°’: %d, íšŸìˆ˜: %d\n", mode, count);
 
-	//¹üÀ§
+	//ë²”ìœ„
 	int range;
 	
 	range = arr1[s-1] - arr1[0];
-	printf("¹üÀ§: %d\n", range);
+	printf("ë²”ìœ„: %d\n", range);
 	
 	
 	return 0;
