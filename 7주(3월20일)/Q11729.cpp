@@ -14,7 +14,6 @@ int main()
     cout << "\n";
     hanoiCount(num);
     hanoiTower(num, 1, 3);
-   
     
     return 0;
 }
