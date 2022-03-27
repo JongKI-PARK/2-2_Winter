@@ -5,24 +5,24 @@
 int sort(int* arr, int start, int end) {
 	int pivot = (start + end) / 2;
 		
-	int pivot_value = arr[pivot];		//Í∏∞Ï§ÄÏù¥ Îê† ÌîºÎ¥áÍ∞í
+	int pivot_value = arr[pivot];		//±‚¡ÿ¿Ã µ… ««∫ø∞™
 	
-	int temp = arr[start];			//Ï≤´Î≤àÏß∏ ÏõêÏÜå Í∞íÍ≥º ÌîºÎ¥á Ïù∏Îç±Ïä§Ïùò Í∞íÏùÑ Î≥ÄÍ≤Ω-> forÎ¨∏Ïùò Ìé∏Î¶¨Ìï®ÏùÑ ÏúÑÌï®
+	int temp = arr[start];			//√ππ¯¬∞ ø¯º“ ∞™∞˙ ««∫ø ¿Œµ¶Ω∫¿« ∞™¿ª ∫Ø∞Ê-> forπÆ¿« ∆Ì∏Æ«‘¿ª ¿ß«‘
 	arr[start] = pivot_value;
 	arr[pivot] = temp;
 	int pivot_index = start;
 
-	for (int i = start+1; i <= end; i++) {		//arrÏùò Î™®Îì† ÏõêÏÜåÏóê ÎåÄÌï¥ÏÑú ÌôïÏù∏
+	for (int i = start+1; i <= end; i++) {		//arr¿« ∏µÁ ø¯º“ø° ¥Î«ÿº≠ »Æ¿Œ
 		if (arr[i] <= pivot_value) {
-			pivot_index++;				//ÌîºÎ¥áÍ∞íÏù¥ Îì§Ïñ¥Í∞à ÏúÑÏπò
-			int temp2 = arr[i];			//ÌîºÎ¥áÍ∞í Î≥¥Îã§ ÏûëÏùÄ ÏõêÏÜåÏùò Í∞í
-			arr[i] = arr[pivot_index];		//Í∞í ÍµêÌôò
+			pivot_index++;				//««∫ø∞™¿Ã µÈæÓ∞• ¿ßƒ°
+			int temp2 = arr[i];			//««∫ø∞™ ∫∏¥Ÿ ¿€¿∫ ø¯º“¿« ∞™
+			arr[i] = arr[pivot_index];		//∞™ ±≥»Ø
 			arr[pivot_index] = temp2;
 		}
 	}
 
 	temp = arr[start];
-	arr[start] = arr[pivot_index];		//Í∏∞Ï§ÄÏúºÎ°ú Ïû°ÏïòÎçò pivotÍ∞íÍ≥º pivot_indexÏóê ÏúÑÏπòÌïòÎäî ÏõêÏÜå ÍµêÌôò
+	arr[start] = arr[pivot_index];		//±‚¡ÿ¿∏∑Œ ¿‚æ“¥¯ pivot∞™∞˙ pivot_indexø° ¿ßƒ°«œ¥¬ ø¯º“ ±≥»Ø
 	arr[pivot_index] = temp;
 
 	return pivot_index;
@@ -48,7 +48,7 @@ int main() {
 	}
 
 	int length = number;
-	quick_sort(num_arr,0,length-1);					//Î™®Îì† ÏõêÏÜå
+	quick_sort(num_arr,0,length-1);					//∏µÁ ø¯º“
 
 	for (int i = 0; i < length; i++) {
 		printf("%d\n", num_arr[i]);
